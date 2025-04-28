@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otaku World Camisas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon"
+        href="https://imgs.search.brave.com/NF6aDez_qqXpOCptFuVJcSKcZ6GcK9anbldjsWxALXg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/dmV0b3Jlcy1ncmF0/aXMva2l0c3VuZS1i/b25pdG8tY29tLXBl/cnNvbmFnZW0tZGUt/ZGVzZW5oby1hbmlt/YWRvLWRlLWVzcGFk/YS1vYmpldG8tZGUt/YXJ0ZS1pc29sYWRv/XzEzODY3Ni0zMTU5/LmpwZz9zZW10PWFp/c19oeWJyaWQmdz03/NDA">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Otaku World</h1>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li class="dropdown"><a href="produtos.html">Produtos</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="camisa.html">Camisas</a></li>
+                        <li><a href="miniatura.html">Acition Figure</Figure></a></li>
+                        <li><a href="espadas.html">Espadas</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon" onclick="toggleCart()">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="products">
+            <div class="product-card">
+                <img src="https://imgs.search.brave.com/hrC0StQ9CJqASswdXMycUfzWhV_4Yv1l6JGw-kkspoQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF9OUV9OUF82/NzI5ODItTUxCNzUy/NTUyMTgyNjJfMDMy/MDI0LU8tY2FtaXNl/dGEtdG9qaS1mdXNo/aWd1cm8tYmVoaW5k/LWFuaW1lLWp1anV0/c3Uta2Fpc2VuLWNh/bWlzYS53ZWJw"
+                    alt="camisa">
+                <h3>Camisa do Toji</h3>
+                <p class="price">R$ 60,00</p>
+                <p class="description"></p>
+                <button
+                    onclick="openModal(1, 'Camisa do Toji', 60.00, '', 'https://imgs.search.brave.com/hrC0StQ9CJqASswdXMycUfzWhV_4Yv1l6JGw-kkspoQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF9OUV9OUF82/NzI5ODItTUxCNzUy/NTUyMTgyNjJfMDMy/MDI0LU8tY2FtaXNl/dGEtdG9qaS1mdXNo/aWd1cm8tYmVoaW5k/LWFuaW1lLWp1anV0/c3Uta2Fpc2VuLWNh/bWlzYS53ZWJw')">Adicionar
+                    ao Carrinho</button>
+            </div>
+
+
+            <div class="product-card">
+                <img src="https://imgs.search.brave.com/dMifAOXxl_mXpBk24uoe0q0q2g0wfcxOEVg9Ul-Xv3s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tdW5k/b2xlYmVuLmNvbS5i/ci9jZG4vc2hvcC9m/aWxlcy85Ml8yMzBj/MWI5MC02NGMyLTQy/MjAtOWU3OS0xYThi/MDAxMDY4MGRfODAw/eC5wbmc_dj0xNzI5/MDI4NDQx"
+                    alt="chu">
+                <h3>Camisa do Pikachu</h3>
+                <p class="price">R$ 85,00</p>
+                <p class="description"></p>
+                <button
+                    onclick="openModal(1, 'Camisa do Pikachu', 85.00, '', 'https://imgs.search.brave.com/dMifAOXxl_mXpBk24uoe0q0q2g0wfcxOEVg9Ul-Xv3s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tdW5k/b2xlYmVuLmNvbS5i/ci9jZG4vc2hvcC9m/aWxlcy85Ml8yMzBj/MWI5MC02NGMyLTQy/MjAtOWU3OS0xYThi/MDAxMDY4MGRfODAw/eC5wbmc_dj0xNzI5/MDI4NDQx')">Adicionar
+                    ao Carrinho</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://imgs.search.brave.com/xImUg6BnX3DHtfTe0FYAAJW5qPoBsMVKpE-KHQebWVk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF9RX05QXzJY/Xzk5MDIzMC1NTEI3/ODI3NzQwMTE5OV8w/ODIwMjQtVi1jYW1p/c2V0YS1zdXBlci1j/YW1wZW9lcy1jYXB0/YWluLXRzdWJhc2Et/Y2FtaXNhLWFuaW1l/LXYwMS53ZWJw"
+                    alt="Camisa">
+                <h3>Camisa do Tsubasa</h3>
+                <p class="price">R$ 90,00</p>
+                <p class="description"></p>
+                <button
+                    onclick="openModal(1, 'Camisa do Tsubasa', 90.00, '', 'https://imgs.search.brave.com/xImUg6BnX3DHtfTe0FYAAJW5qPoBsMVKpE-KHQebWVk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF9RX05QXzJY/Xzk5MDIzMC1NTEI3/ODI3NzQwMTE5OV8w/ODIwMjQtVi1jYW1p/c2V0YS1zdXBlci1j/YW1wZW9lcy1jYXB0/YWluLXRzdWJhc2Et/Y2FtaXNhLWFuaW1l/LXYwMS53ZWJw')">Adicionar
+                    ao Carrinho</button>
+            </div>
+
+
+        </section>
+
+        <!-- Modal de quantidade -->
+        <div id="quantity-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div class="modal-product-details">
+                    <img id="modal-product-image" src="" alt="Produto" class="modal-product-image">
+                    <div class="modal-product-info">
+                        <h2 id="modal-product-name">Nome do Produto</h2>
+                        <p id="modal-product-description">Descrição do Produto</p>
+                        <p class="price">R$ <span id="modal-product-price">0,00</span></p>
+                    </div>
+                </div>
+                <h3>Selecione a Quantidade</h3>
+                <div class="quantity-selector">
+                    <button onclick="decrementQuantity()">-</button>
+                    <input type="number" id="quantity" value="1" min="1" max="10">
+                    <button onclick="incrementQuantity()">+</button>
+                </div>
+                <button onclick="addToCart()">Confirmar</button>
+            </div>
+        </div>
+
+        <!-- Carrinho de Compras -->
+        <div id="cart-overlay" class="cart-overlay" onclick="closeCartOnClickOutside(event)">
+            <div style="width: 25rem;" id="shopping-cart" class="cart-panel" onclick="event.stopPropagation()">
+
+                <br><br><br>
+                <h2>Carrinho de Compras</h2>
+                <div id="cart-items"></div>
+                <div class="cart-total">
+                    <h3>Total: R$ <span id="cart-total">0,00</span></h3>
+                </div>
+                <span class="cart-close" onclick="closeCart()">&times;</span>
+
+                <div class="cart-actions">
+                    <button onclick="openPaymentModal()">Ir para Pagamento</button>
+                </div>
+
+            </div>
+
+            <!-- Modal de Pagamento -->
+            <div id="payment-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closePaymentModal()">&times;</span>
+                    <h2>Resumo do Pedido</h2>
+                    <div id="payment-items"></div>
+                    <div class="payment-total">
+                        <h3>Total: R$ <span id="payment-total">0,00</span></h3>
+                    </div>
+                    <button onclick="proceedToPayment()">Ir para Pagamento</button>
+                </div>
+            </div>
+
+            <div id="toast" class="toast"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Otaku World. O melhor do mundo GEEK.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -91,7 +91,7 @@ function formatPrice(price) {
 function updateCartDisplay() {
     const cartItems = document.getElementById('cart-items');
     const cartTotal = document.getElementById('cart-total');
-    
+
     cartItems.innerHTML = '';
     let total = 0;
 
@@ -135,16 +135,16 @@ function toggleCart() {
 document.addEventListener('click', (e) => {
     const cartPanel = document.getElementById('shopping-cart');
     const cartIcon = document.querySelector('.cart-icon');
-    
-    if (cartPanel.classList.contains('active') && 
-        !cartPanel.contains(e.target) && 
+
+    if (cartPanel.classList.contains('active') &&
+        !cartPanel.contains(e.target) &&
         !cartIcon.contains(e.target)) {
         cartPanel.classList.remove('active');
     }
 });
 
 // Fechar o modal quando clicar fora dele
-window.onclick = function(event) {
+window.onclick = function (event) {
     const modal = document.getElementById('quantity-modal');
     if (event.target == modal) {
         closeModal();
@@ -301,3 +301,19 @@ function removeItem(itemId) {
 
 // Inicializa o carrinho
 renderCart();
+function toggleCart() {
+    const overlay = document.getElementById("cart-overlay");
+    overlay.classList.toggle("active");
+    document.getElementById("shopping-cart").classList.toggle("active");
+}
+
+function closeCart() {
+    document.getElementById("cart-overlay").classList.remove("active");
+    document.getElementById("shopping-cart").classList.remove("active");
+}
+
+function closeCartOnClickOutside(event) {
+    if (event.target.id === "cart-overlay") {
+        closeCart();
+    }
+}

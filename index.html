@@ -1,113 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Bikes Store</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quem Somos - Otaku World</title>
+    <link rel="stylesheet" href="sobre.css" />
+    <link rel="icon"
+        href="https://imgs.search.brave.com/NF6aDez_qqXpOCptFuVJcSKcZ6GcK9anbldjsWxALXg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/dmV0b3Jlcy1ncmF0/aXMva2l0c3VuZS1i/b25pdG8tY29tLXBl/cnNvbmFnZW0tZGUt/ZGVzZW5oby1hbmlt/YWRvLWRlLWVzcGFk/YS1vYmpldG8tZGUt/YXJ0ZS1pc29sYWRv/XzEzODY3Ni0zMTU5/LmpwZz9zZW10PWFp/c19oeWJyaWQmdz03/NDA">
+
 </head>
+
 <body>
     <header>
         <div class="logo">
-            <h1>E-Bikes Store</h1>
+            <h1>Otaku World</h1>
         </div>
-        <nav class="menu">
+
+        <nav class="menu" aria-label="Menu Principal">
             <ul>
-                <li><a href="#products">Produtos</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li class="dropdown"><a href="produtos.html">Produtos</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="camisa.html">Camisas</a></li>
+                        <li><a href="miniatura.html">Acition Figure</Figure></a></li>
+                        <li><a href="espadas.html">Espadas</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html" class="active">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
-        <div class="cart-icon" onclick="toggleCart()">
-            <i class="fas fa-shopping-cart"></i>
-            <span id="cart-count">0</span>
+
+        <div>
+
         </div>
     </header>
 
     <main>
-        <section class="products">
-            <div class="product-card">
-                <img src="https://placehold.co/300x200" alt="Mountain E-Bike">
-                <h3>Mountain E-Bike Pro</h3>
-                <p class="price">R$ 12.999,00</p>
-                <p class="description">Bike elétrica ideal para trilhas e montanhas, com bateria de longa duração.</p>
-                <button onclick="openModal(1, 'Mountain E-Bike Pro', 12999.00, 'Bike elétrica ideal para trilhas e montanhas, com bateria de longa duração.', 'https://placehold.co/300x200')">Adicionar ao Carrinho</button>
-            </div>
+        <section class="about-us" id="about">
+            <h1>Quem Somos</h1>
+            <p>
+                Somos apaixonados por animes — assim como você! A <strong>Otaku World</strong> nasceu com o objetivo de
+                reunir em um só lugar os melhores produtos inspirados nos animes que marcaram nossas vidas.
+            </p>
+            <p>
+                Aqui, você encontra camisetas, action figures, pôsteres, acessórios, canecas e muito mais, tudo com
+                qualidade, autenticidade e aquele toque especial que só os verdadeiros fãs reconhecem.
+            </p>
+            <p>
+                Nosso time é formado por otakus de coração, e cada produto que colocamos na loja é escolhido com muito
+                carinho, pensando em tornar sua coleção ainda mais épica. Seja você fã de <strong>Naruto</strong>,
+                <strong>One Piece</strong>, <strong>Demon Slayer</strong>, <strong>Attack on Titan</strong> ou qualquer
+                outro universo incrível, temos algo especial esperando por você.
+            </p>
+            <p>
+                Sinta-se em casa, explore nosso catálogo e leve um pedacinho do seu anime favorito com você!
+            </p>
+        </section>
 
-            <div class="product-card">
-                <img src="https://placehold.co/300x200" alt="Urban E-Bike">
-                <h3>Urban E-Bike Comfort</h3>
-                <p class="price">R$ 8.999,00</p>
-                <p class="description">Perfeita para mobilidade urbana, design moderno e confortável.</p>
-                <button onclick="openModal(2, 'Urban E-Bike Comfort', 8999.00, 'Perfeita para mobilidade urbana, design moderno e confortável.', 'https://placehold.co/300x200')">Adicionar ao Carrinho</button>
-            </div>
-
-            <div class="product-card">
-                <img src="https://placehold.co/300x200" alt="Sport E-Bike">
-                <h3>Sport E-Bike Speed</h3>
-                <p class="price">R$ 15.999,00</p>
-                <p class="description">Bike elétrica esportiva com alto desempenho e velocidade máxima.</p>
-                <button onclick="openModal(3, 'Sport E-Bike Speed', 15999.00, 'Bike elétrica esportiva com alto desempenho e velocidade máxima.', 'https://placehold.co/300x200')">Adicionar ao Carrinho</button>
+        <section class="team" id="team">
+            <h2>Nosso Time</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <br>
+                    <h3>Maria Júlia</h3>
+                    <p>Atendimento ao cliente e fã de Naruto</p>
+                </div>
+                <div class="team-member">
+                    <br>
+                    <h3>Luigi peruch</h3>
+                    <p>Designer, Dono e Fã de Animes</p>
+                </div>
+                <div class="team-member">
+                    <br>
+                    <h3>Carlos João</h3>
+                    <p>Designer e Fã de One Piece</p>
+                </div>
             </div>
         </section>
 
-        <!-- Modal de quantidade -->
-<div id="quantity-modal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <div class="modal-product-details">
-            <img id="modal-product-image" src="" alt="Produto" class="modal-product-image">
-            <div class="modal-product-info">
-                <h2 id="modal-product-name">Nome do Produto</h2>
-                <p id="modal-product-description">Descrição do Produto</p>
-                <p class="price">R$ <span id="modal-product-price">0,00</span></p>
-            </div>
-        </div>
-        <h3>Selecione a Quantidade</h3>
-        <div class="quantity-selector">
-            <button onclick="decrementQuantity()">-</button>
-            <input type="number" id="quantity" value="1" min="1" max="10">
-            <button onclick="incrementQuantity()">+</button>
-        </div>
-        <button onclick="addToCart()">Confirmar</button>
-    </div>
-</div>
 
-        <!-- Carrinho de Compras -->
-        <div id="shopping-cart" class="cart-panel">
-            <h2>Carrinho de Compras</h2>
-            <div id="cart-items"></div>
-            <div class="cart-total">
-                <h3>Total: R$ <span id="cart-total">0,00</span></h3>
-            </div>
-            <div class="cart-actions">
-                <button onclick="closeCart()">Continuar Comprando</button>
-                <button onclick="openPaymentModal()">Ir para Pagamento</button>
-            </div>
-        </div>
-
-        <!-- Modal de Pagamento -->
-        <div id="payment-modal" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closePaymentModal()">&times;</span>
-                <h2>Resumo do Pedido</h2>
-                <div id="payment-items"></div>
-                <div class="payment-total">
-                    <h3>Total: R$ <span id="payment-total">0,00</span></h3>
-                </div>
-                <button onclick="proceedToPayment()">Ir para Pagamento</button>
-            </div>
-        </div>
-
-        <div id="toast" class="toast"></div>
     </main>
 
     <footer>
-        <p>&copy; 2024 -E-Bikes Store. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Otaku World. O melhor do mundo GEEK.</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
