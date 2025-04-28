@@ -19,7 +19,8 @@ header {
     color: rgb(255, 255, 255);
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 100;   
+    text-align: center
 }
 
 .logo h1 {
@@ -85,7 +86,7 @@ main {
 }
 
 .menu ul li .dropdown-menu li a:hover {
-    background-color: #ed09ce;
+    background-color: #e412e4;
 }
 
 .products {
